@@ -1,11 +1,11 @@
-# octopus-terrafor-libraryset-module
+# octopus-terraform-libraryset-module
 easy librarysets in terraform
 
 ## Usage
 
 ```terraform
 module "variable_set_name" {
-    source == "git:https://github.com/eternalapprentice2000/octopus-terrafor-libraryset-module.git?ref=<latest_version>"
+    source == "git:https://github.com/eternalapprentice2000/octopus-terraform-libraryset-module.git?ref=<latest_version>"
 
     name = "Library Set Name"
     description = "Description"
