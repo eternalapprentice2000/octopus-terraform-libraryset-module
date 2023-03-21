@@ -48,7 +48,7 @@ module "variable_set_name" {
             values = [
                 ## regular variable
                 {
-                    id = "random_unique_string_here"    ## required, but this is not the octopus id, just whatever as long as its unique in the group
+                    uid = "random_unique_string_here"   ## required, but this is not the octopus id, just whatever as long as its unique in the group
                     type = "String"                     ## optional, default = "String"
                     value = "some_value_here"           ## required
                     scope = {                           ## optional, default = no scope
