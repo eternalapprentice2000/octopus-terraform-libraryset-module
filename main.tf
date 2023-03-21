@@ -28,7 +28,7 @@ locals {
     sorted = flatten([
         for k, v in var.variables : [
             for vv in v.values : {
-                key_name = "${v.name}_${vv.id}",
+                key_name = "${v.name}_${vv.uid}",
                 value = try(vv.value, null),
                 type = try(vv.type, "String"),
                 name = v.name,
